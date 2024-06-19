@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Empréstimo</title>
+</head>
+<body>
+
+    <h1> Adicionar Empréstimo </h1>
+    <form method="POST">
+        {% csrf_token %}
+
+        {{form.as_p}}
+
+        <button type = "reset">Limpar</button>
+        <button type = "submit">Salvar</button>
+    </form>
+
+</body>
+</html>
